@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+* {
+    font-family: 'Supermercado One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+:root {
+    --main-color: #c27d16;
+    --black: #12121a;
+    --bg: #0e0d0d;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.figures .images img {
+    width: 50%; 
+    height: auto; 
+    position: relative;
+}
+
+.images .img_1 {
+    right: -50%;
+}
+
+.images .img_3 {
+    right: -50%;
+}
+
+.images .img_5 {
+    right: -50%;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex:0 0 auto;
+    width:50%;
+    color: #fff;
+}
+
+.content-container {
+    padding:40px 50px;
+}
+
+.container {
+    flex-flow:row wrap;
+}
+
+.textBox h1 {
+    font-weight:700;
+    font-size:25px;
+    margin-bottom:20px;
+    text-align: justify;
+}
+
+.container .content-container {
+    display:block;
+    order:2;
+    width:100%;
+}
+
+.container .content-container {
+    flex:0 0 auto;
+    width:50%;
+}
